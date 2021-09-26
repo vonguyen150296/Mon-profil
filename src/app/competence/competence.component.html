@@ -1,0 +1,42 @@
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Mes compétences</li>
+        </ol>
+    </nav>
+
+    <div class="comp-title">
+        <h1>Mes compétences</h1>
+    </div>
+    <div class="comp-content row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Frontend :</h2>
+            <div *ngFor="let item of front" class="comp-item">
+                <div>{{item.name}} : </div>
+                <div class="comp-item-icon">
+                    <span *ngFor="let ind of arrIcons">
+                        <fa-icon *ngIf="ind <= item.niveau" [icon]="starF"></fa-icon>
+                        <fa-icon *ngIf="ind == item.niveau + 0.5" [icon]="starHalf"></fa-icon>
+                        <fa-icon *ngIf="ind > item.niveau + 0.5" [icon]="starE"></fa-icon>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Backend :</h2>
+            <div *ngFor="let item of back" class="comp-item">
+                <div>{{item.name}} : </div>
+                <div class="comp-item-icon">
+                    <span *ngFor="let ind of arrIcons">
+                        <fa-icon *ngIf="ind <= item.niveau" [icon]="starF"></fa-icon>
+                        <fa-icon *ngIf="ind == item.niveau + 0.5" [icon]="starHalf"></fa-icon>
+                        <fa-icon *ngIf="ind > item.niveau + 0.5" [icon]="starE"></fa-icon>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

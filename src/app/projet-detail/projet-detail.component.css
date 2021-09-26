@@ -1,0 +1,8 @@
+.projet-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projet-button>a {
+    text-decoration: none;
+}

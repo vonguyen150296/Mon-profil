@@ -1,0 +1,21 @@
+<mat-card class="experience-card">
+    <mat-card-header>
+        <div mat-card-avatar class="experience-header-image" style="background-image: url({{experience.urlLogo}});"></div>
+        <mat-card-title>{{experience.name}}</mat-card-title>
+        <mat-card-subtitle>{{experience.periode}}</mat-card-subtitle>
+    </mat-card-header>
+    <!-- <img mat-card-image [src]="school.urlImage" alt="Photo of a Shiba Inu"> -->
+    <mat-card-content>
+        <h3 style="font-weight: 600;">{{experience.role}}</h3>
+        <p style="text-align: justify;">{{experience.description}}</p>
+        <h4>
+            <span style="text-decoration: underline;">Environnement technique :</span>&nbsp;&nbsp;
+            <span *ngFor="let item of experience.technologie" class="badge badge-pill badge-success">
+                {{item}}
+            </span>
+        </h4>
+    </mat-card-content>
+    <mat-card-actions class="experience-button">
+        <button [routerLink]="experience.detail" mat-raised-button color="primary">Voir detail!</button>
+    </mat-card-actions>
+</mat-card>

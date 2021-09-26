@@ -1,0 +1,13 @@
+.experience-card {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.experience-header-image {
+    background-size: cover;
+}
+
+.experience-button {
+    display: flex;
+    justify-content: right;
+}

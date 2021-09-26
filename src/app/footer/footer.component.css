@@ -1,0 +1,31 @@
+.footer-landing {
+    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+    background-image: linear-gradient(-111deg, #0d2336 36%, #00b2ff 134%);
+    padding: 20px 0 0px;
+    margin-top: 30px;
+    -webkit-box-shadow: inset -2px 20px 20px 0px rgba(0, 0, 0, 0.78);
+    box-shadow: inset -2px 20px 20px 0px rgba(0, 0, 0, 0.78);
+    color: beige;
+}
+
+.copy-right {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-icon {
+    margin-left: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    color: beige !important;
+}
+
+.footer-icons {
+    height: 30px;
+}
+
+.footer-icon:hover {
+    font-size: 27px;
+    color: antiquewhite;
+}

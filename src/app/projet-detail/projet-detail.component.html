@@ -1,0 +1,21 @@
+<mat-card class="formation-card">
+    <mat-card-header>
+        <div mat-card-avatar class="formation-header-image" style="background-image: url(assets/images/logo.jpg);">
+        </div>
+        <mat-card-title>{{projet.name}}</mat-card-title>
+        <mat-card-subtitle>{{projet.subtitle}} </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="projet.urlImage" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>{{projet.des}}</p>
+        <p style="text-decoration: underline;">Environnement technique :</p>
+        <span *ngFor="let item of projet.technologie" class="badge badge-pill badge-success">
+            {{item}}
+        </span>
+        <mat-card-actions class="projet-button">
+            <a [href]="projet.sources" target="_blank" mat-raised-button color="primary">Sources codes</a>
+            <a *ngIf="projet.link" [href]="projet.link" target="_blank" mat-raised-button color="primary">Voir site web</a>
+        </mat-card-actions>
+
+    </mat-card-content>
+</mat-card>

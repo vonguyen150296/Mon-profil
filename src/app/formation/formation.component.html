@@ -1,0 +1,15 @@
+<mat-card class="formation-card">
+    <mat-card-header>
+        <div mat-card-avatar class="formation-header-image" style="background-image: url({{school.urlLogo}});"></div>
+        <mat-card-title>{{school.name}}</mat-card-title>
+        <mat-card-subtitle>{{school.yearSchool}} ({{school.bac}})</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="school.urlImage" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>{{school.description}}</p>
+        <p>Principaux cours suivis :</p>
+        <ul>
+            <li *ngFor="let item of school.matiere">{{item}}</li>
+        </ul>
+    </mat-card-content>
+</mat-card>

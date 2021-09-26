@@ -1,0 +1,33 @@
+<div class="container" *ngIf="exp">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Terenui</li>
+        </ol>
+    </nav>
+    <div class="exp-title">
+        <h1>{{exp.name}}</h1>
+        <img [src]="exp.urlImage" alt="" />
+    </div>
+    <div class="exp-contexte">
+        <h2>Contexte :</h2>
+        <h4>{{exp.contexte.project.name}}</h4>
+        <ul>
+            <li *ngFor="let item of exp.contexte.project.des">{{item}}</li>
+        </ul>
+        <h4>Missions : {{exp.contexte.mission}}</h4>
+        <h4>Equipe : {{exp.contexte.equipe}}</h4>
+    </div>
+    <div class="exp-activite">
+        <h2>Activités :</h2>
+        <ul>
+            <li *ngFor="let item of exp.activite">{{item}}</li>
+        </ul>
+    </div>
+    <div class="exp-technique">
+        <h2>Environnement technique :</h2>
+        <div>
+            <span *ngFor="let item of exp.technologie" class="badge badge-pill badge-success">{{item}}</span>
+        </div>
+    </div>
+</div>

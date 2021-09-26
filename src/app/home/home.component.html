@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<div class="container">
+    <h1>FORMATIONS</h1>
+
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <app-formation [school]="insa"></app-formation>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <app-formation [school]="hue"></app-formation>
+        </div>
+    </div>
+    <br/><br/>
+
+    <h1>EXPÉRIENCES PROFESSIONNELLES</h1>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <app-experience [experience]="checkVisit"></app-experience>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <app-experience [experience]="terenui"></app-experience>
+        </div>
+    </div>
+
+</div>
