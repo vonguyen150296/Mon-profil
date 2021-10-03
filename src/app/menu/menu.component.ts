@@ -21,9 +21,11 @@ export class MenuComponent implements OnInit {
     if(this.statusMenu === "hidden"){
       this.faIcon = this.faClose;
       this.statusMenu = "show";
+      document.getElementById("mainNav").style.height = "82px";
     }else {
       this.faIcon = this.faBars;
       this.statusMenu = "hidden";
+      document.getElementById("mainNav").style.height = "0";
     }
   }
   

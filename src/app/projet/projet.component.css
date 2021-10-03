@@ -2,6 +2,19 @@
     margin-top: 86px;
 }
 
+.projets {
+    animation: fadeEffect 1.5s;
+}
+
+.breadcrumb {
+    background-image: linear-gradient(-89deg, #0d2336 36%, #00b2ff 127%);
+}
+
+.breadcrumb a,
+.breadcrumb li {
+    color: beige;
+}
+
 .projet-title {
     text-align: center;
     font-weight: 600;
@@ -18,6 +31,15 @@
 .projet-item {
     margin: 5px;
     width: 350px;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1000px) {

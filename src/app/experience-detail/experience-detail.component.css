@@ -2,6 +2,19 @@
     margin-top: 86px;
 }
 
+.experiences {
+    animation: fadeEffect 1.5s;
+}
+
+.breadcrumb {
+    background-image: linear-gradient(-89deg, #0d2336 36%, #00b2ff 127%);
+}
+
+.breadcrumb a,
+.breadcrumb li {
+    color: beige;
+}
+
 .exp-title {
     display: flex;
     flex-direction: column;
@@ -14,6 +27,15 @@
 
 .exp-title>h1 {
     font-weight: 600;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 767px) {

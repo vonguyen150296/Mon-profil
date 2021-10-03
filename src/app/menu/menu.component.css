@@ -1,15 +1,27 @@
 /* .container {
 } */
 
+.menus {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .navbar {
     background-image: linear-gradient(-89deg, #0d2336 36%, #00b2ff 127%);
     color: beige;
+    height: 66px;
 }
 
 .navbar-mobile {
     border: none;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
     border-radius: 0px;
     position: fixed;
     z-index: 1100;
@@ -20,19 +32,17 @@
     box-shadow: -1px 0px 20px 0px #0000001a;
     width: 100%;
     opacity: 1;
-    -webkit-animation: dropdownfaderight 0.4s;
-    animation: dropdownfaderight 0.4s;
     text-align: center;
+    overflow: hidden;
 }
 
 .navbar-mobile li {
     list-style-type: none;
     padding: 10px 14px;
-    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
 }
 
 .navbar-mobile li a {
-    color: #000;
     font-size: 17px;
     font-family: "Source Sans Pro";
     font-weight: bold;
@@ -47,4 +57,15 @@
     font-size: 20px;
     font-weight: 600;
     color: beige;
+}
+
+#mainNav {
+    height: 0;
+    transition: height 0.4s ease-out;
+    background-image: linear-gradient(-89deg, #0d2336 36%, #00b2ff 127%);
+    color: beige;
+}
+
+.btn-menu {
+    border: 1px solid #4CAF50;
 }

@@ -1,6 +1,7 @@
 .experience-card {
     max-width: 100%;
     margin-bottom: 10px;
+    animation: fadeEffect 1.5s;
 }
 
 .experience-header-image {

@@ -1,5 +1,18 @@
+.competences {
+    animation: fadeEffect 1.5s;
+}
+
 .container {
     margin-top: 86px;
+}
+
+.breadcrumb {
+    background-image: linear-gradient(-89deg, #0d2336 36%, #00b2ff 127%);
+}
+
+.breadcrumb a,
+.breadcrumb li {
+    color: beige;
 }
 
 .comp-title {
@@ -24,4 +37,13 @@
 
 .comp-item-icon {
     color: blue;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
